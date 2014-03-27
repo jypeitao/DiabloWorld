@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>myztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>myz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>myz_01.png</spriteFrame>
+            <spriteFrame>myz_02.png</spriteFrame>
+            <spriteFrame>myz_03.png</spriteFrame>
+            <spriteFrame>myz_04.png</spriteFrame>
+            <spriteFrame>myz_05.png</spriteFrame>
+            <spriteFrame>myz_06.png</spriteFrame>
+            <spriteFrame>myz_07.png</spriteFrame>
+            <spriteFrame>myz_08.png</spriteFrame>
+            <spriteFrame>myz_09.png</spriteFrame>
+
+        </animation>
+    </animations>
+</root>

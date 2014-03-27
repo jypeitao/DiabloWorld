@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>szhtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>szh</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>szh_01.png</spriteFrame>
+            <spriteFrame>szh_02.png</spriteFrame>
+            <spriteFrame>szh_03.png</spriteFrame>
+            <spriteFrame>szh_04.png</spriteFrame>
+            <spriteFrame>szh_05.png</spriteFrame>
+            <spriteFrame>szh_06.png</spriteFrame>
+            <spriteFrame>szh_07.png</spriteFrame>
+
+        </animation>
+        <animation>
+            <name>szh_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>szh_01_01.png</spriteFrame>
+            <spriteFrame>szh_01_02.png</spriteFrame>
+            <spriteFrame>szh_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

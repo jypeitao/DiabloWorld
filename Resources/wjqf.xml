@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>wjqftx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>wjqf</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>wjqf_01.png</spriteFrame>
+            <spriteFrame>wjqf_02.png</spriteFrame>
+            <spriteFrame>wjqf_03.png</spriteFrame>
+            <spriteFrame>wjqf_04.png</spriteFrame>
+            <spriteFrame>wjqf_05.png</spriteFrame>
+            <spriteFrame>wjqf_06.png</spriteFrame>
+            <spriteFrame>wjqf_07.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

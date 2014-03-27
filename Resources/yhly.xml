@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>yhlytx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>yhly</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>yhly_01.png</spriteFrame>
+            <spriteFrame>yhly_02.png</spriteFrame>
+            <spriteFrame>yhly_03.png</spriteFrame>
+            <spriteFrame>yhly_04.png</spriteFrame>
+            <spriteFrame>yhly_05.png</spriteFrame>
+            <spriteFrame>yhly_06.png</spriteFrame>
+            <spriteFrame>yhly_07.png</spriteFrame>
+            <spriteFrame>yhly_08.png</spriteFrame>
+            <spriteFrame>yhly_09.png</spriteFrame>
+            <spriteFrame>yhly_10.png</spriteFrame>
+            <spriteFrame>yhly_11.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

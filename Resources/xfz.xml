@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>xfztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>xfz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>xfz_01.png</spriteFrame>
+            <spriteFrame>xfz_02.png</spriteFrame>
+            <spriteFrame>xfz_03.png</spriteFrame>
+            <spriteFrame>xfz_04.png</spriteFrame>
+            <spriteFrame>xfz_05.png</spriteFrame>
+            <spriteFrame>xfz_06.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>xfz_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>xfz_01_01.png</spriteFrame>
+            <spriteFrame>xfz_01_02.png</spriteFrame>
+            <spriteFrame>xfz_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

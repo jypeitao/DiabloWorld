@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>hlztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>hlz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>hlz_01.png</spriteFrame>
+            <spriteFrame>hlz_02.png</spriteFrame>
+            <spriteFrame>hlz_03.png</spriteFrame>
+            <spriteFrame>hlz_04.png</spriteFrame>
+            <spriteFrame>hlz_05.png</spriteFrame>
+            <spriteFrame>hlz_06.png</spriteFrame>
+            <spriteFrame>hlz_07.png</spriteFrame>
+            <spriteFrame>hlz_08.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

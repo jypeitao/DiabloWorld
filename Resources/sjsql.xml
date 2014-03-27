@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>sjsqltx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>sjsql</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>sjsql_01.png</spriteFrame>
+            <spriteFrame>sjsql_02.png</spriteFrame>
+            <spriteFrame>sjsql_03.png</spriteFrame>
+            <spriteFrame>sjsql_04.png</spriteFrame>
+            <spriteFrame>sjsql_05.png</spriteFrame>
+            <spriteFrame>sjsql_06.png</spriteFrame>
+            <spriteFrame>sjsql_07.png</spriteFrame>
+            <spriteFrame>sjsql_08.png</spriteFrame>
+            <spriteFrame>sjsql_09.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>sjsql_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>sjsql_01_01.png</spriteFrame>
+            <spriteFrame>sjsql_01_02.png</spriteFrame>
+            <spriteFrame>sjsql_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

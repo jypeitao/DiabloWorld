@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>qbjtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>qbj</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>qbj_01.png</spriteFrame>
+            <spriteFrame>qbj_02.png</spriteFrame>
+            <spriteFrame>qbj_03.png</spriteFrame>
+            <spriteFrame>qbj_04.png</spriteFrame>
+            <spriteFrame>qbj_05.png</spriteFrame>
+            <spriteFrame>qbj_06.png</spriteFrame>
+
+        </animation>
+        <animation>
+            <name>qbj_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>qbj_01_01.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

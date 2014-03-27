@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>ef_01.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 106}, {320, 96}}</string>
+			<key>spriteOffset</key>
+			<string>{-40, -14}</string>
+			<key>spriteSize</key>
+			<string>{320, 96}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 538}, {320, 96}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_02.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 94}, {322, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{-39, -9}</string>
+			<key>spriteSize</key>
+			<string>{322, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 426}, {322, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_03.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 86}, {328, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{-36, -5}</string>
+			<key>spriteSize</key>
+			<string>{328, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{332, 406}, {328, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_04.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 71}, {330, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 3}</string>
+			<key>spriteSize</key>
+			<string>{330, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{600, 132}, {330, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_05.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 60}, {330, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 8}</string>
+			<key>spriteSize</key>
+			<string>{330, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 280}, {330, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_06.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 56}, {338, 146}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, 11}</string>
+			<key>spriteSize</key>
+			<string>{338, 146}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 132}, {338, 146}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_07.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 68}, {342, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{-29, 7}</string>
+			<key>spriteSize</key>
+			<string>{342, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {342, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_08.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{11, 59}, {334, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-22, 15}</string>
+			<key>spriteSize</key>
+			<string>{334, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{340, 272}, {334, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_09.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{24, 66}, {312, 126}}</string>
+			<key>spriteOffset</key>
+			<string>{-20, 11}</string>
+			<key>spriteSize</key>
+			<string>{312, 126}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{644, 0}, {312, 126}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_10.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{40, 61}, {298, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{-11, 14}</string>
+			<key>spriteSize</key>
+			<string>{298, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{344, 0}, {298, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_11.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{54, 55}, {286, 136}}</string>
+			<key>spriteOffset</key>
+			<string>{-3, 17}</string>
+			<key>spriteSize</key>
+			<string>{286, 136}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{324, 526}, {286, 136}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_12.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{69, 58}, {272, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{5, 16}</string>
+			<key>spriteSize</key>
+			<string>{272, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 636}, {272, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_13.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{86, 52}, {258, 138}}</string>
+			<key>spriteOffset</key>
+			<string>{15, 19}</string>
+			<key>spriteSize</key>
+			<string>{258, 138}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{340, 132}, {258, 138}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_14.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{103, 52}, {244, 138}}</string>
+			<key>spriteOffset</key>
+			<string>{25, 19}</string>
+			<key>spriteSize</key>
+			<string>{244, 138}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{676, 266}, {244, 138}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_15.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{121, 53}, {228, 136}}</string>
+			<key>spriteOffset</key>
+			<string>{35, 19}</string>
+			<key>spriteSize</key>
+			<string>{228, 136}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{612, 534}, {228, 136}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_16.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{144, 60}, {206, 126}}</string>
+			<key>spriteOffset</key>
+			<string>{47, 17}</string>
+			<key>spriteSize</key>
+			<string>{206, 126}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{662, 406}, {206, 126}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_17.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{158, 61}, {194, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{55, 20}</string>
+			<key>spriteSize</key>
+			<string>{194, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{274, 664}, {194, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_18.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{171, 53}, {184, 120}}</string>
+			<key>spriteOffset</key>
+			<string>{63, 27}</string>
+			<key>spriteSize</key>
+			<string>{184, 120}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 770}, {184, 120}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_19.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{185, 47}, {168, 122}}</string>
+			<key>spriteOffset</key>
+			<string>{69, 32}</string>
+			<key>spriteSize</key>
+			<string>{168, 122}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{598, 672}, {168, 122}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_20.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{200, 50}, {148, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{74, 34}</string>
+			<key>spriteSize</key>
+			<string>{148, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{186, 784}, {148, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_21.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{219, 64}, {126, 90}}</string>
+			<key>spriteOffset</key>
+			<string>{82, 31}</string>
+			<key>spriteSize</key>
+			<string>{126, 90}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{470, 664}, {126, 90}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>ef_22.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{242, 66}, {100, 82}}</string>
+			<key>spriteOffset</key>
+			<string>{92, 33}</string>
+			<key>spriteSize</key>
+			<string>{100, 82}</string>
+			<key>spriteSourceSize</key>
+			<string>{400, 280}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{470, 756}, {100, 82}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.5.2</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>name</key>
+		<string>Untitled</string>
+		<key>premultipliedAlpha</key>
+		<false/>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>yanwu5</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>yanwu5</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

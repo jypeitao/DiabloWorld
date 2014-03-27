@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>srzstx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>srzs</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>srzs_01.png</spriteFrame>
+            <spriteFrame>srzs_02.png</spriteFrame>
+            <spriteFrame>srzs_03.png</spriteFrame>
+            <spriteFrame>srzs_04.png</spriteFrame>
+            <spriteFrame>srzs_05.png</spriteFrame>
+            <spriteFrame>srzs_06.png</spriteFrame>
+            <spriteFrame>srzs_07.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>srzs_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>srzs_01_01.png</spriteFrame>
+            <spriteFrame>srzs_01_02.png</spriteFrame>
+            <spriteFrame>srzs_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>
