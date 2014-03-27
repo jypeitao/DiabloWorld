@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>kszdtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>kszd</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>kszd_01.png</spriteFrame>
+            <spriteFrame>kszd_02.png</spriteFrame>
+            <spriteFrame>kszd_03.png</spriteFrame>
+            <spriteFrame>kszd_04.png</spriteFrame>
+            <spriteFrame>kszd_05.png</spriteFrame>
+            <spriteFrame>kszd_06.png</spriteFrame>
+
+        </animation>
+    </animations>
+</root>

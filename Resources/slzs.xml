@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>slzstx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>slzs</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>slzs_01.png</spriteFrame>
+            <spriteFrame>slzs_02.png</spriteFrame>
+            <spriteFrame>slzs_03.png</spriteFrame>
+            <spriteFrame>slzs_04.png</spriteFrame>
+            <spriteFrame>slzs_05.png</spriteFrame>
+            <spriteFrame>slzs_06.png</spriteFrame>
+            <spriteFrame>slzs_07.png</spriteFrame>
+            <spriteFrame>slzs_08.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>slzs_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>slzs_01_01.png</spriteFrame>
+            <spriteFrame>slzs_01_02.png</spriteFrame>
+            <spriteFrame>slzs_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

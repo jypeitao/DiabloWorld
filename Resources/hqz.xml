@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>hqztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>hqz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>hqz_01.png</spriteFrame>
+            <spriteFrame>hqz_02.png</spriteFrame>
+            <spriteFrame>hqz_03.png</spriteFrame>
+            <spriteFrame>hqz_04.png</spriteFrame>
+            <spriteFrame>hqz_05.png</spriteFrame>
+            <spriteFrame>hqz_06.png</spriteFrame>
+            <spriteFrame>hqz_07.png</spriteFrame>
+            <spriteFrame>hqz_08.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>hqz_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>hqz_01_01.png</spriteFrame>
+            <spriteFrame>hqz_01_02.png</spriteFrame>
+            <spriteFrame>hqz_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>ggjstx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>ggjs</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>ggjs_01.png</spriteFrame>
+            <spriteFrame>ggjs_02.png</spriteFrame>
+            <spriteFrame>ggjs_03.png</spriteFrame>
+            <spriteFrame>ggjs_04.png</spriteFrame>
+            <spriteFrame>ggjs_05.png</spriteFrame>
+            <spriteFrame>ggjs_06.png</spriteFrame>
+            <spriteFrame>ggjs_07.png</spriteFrame>
+            <spriteFrame>ggjs_08.png</spriteFrame>
+            <spriteFrame>ggjs_09.png</spriteFrame>
+            <spriteFrame>ggjs_10.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

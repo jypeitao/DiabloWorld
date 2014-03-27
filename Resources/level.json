@@ -1,0 +1,256 @@
+{
+  "data": {
+    "row": [
+      {
+        "level": "1",
+        "ExpRequired": "50",
+        "ExpSecProduce": "2"
+      },
+      {
+        "level": "2",
+        "ExpRequired": "100",
+        "ExpSecProduce": "3"
+      },
+      {
+        "level": "3",
+        "ExpRequired": "150",
+        "ExpSecProduce": "5"
+      },
+      {
+        "level": "4",
+        "ExpRequired": "200",
+        "ExpSecProduce": "6"
+      },
+      {
+        "level": "5",
+        "ExpRequired": "250",
+        "ExpSecProduce": "7"
+      },
+      {
+        "level": "6",
+        "ExpRequired": "300",
+        "ExpSecProduce": "8"
+      },
+      {
+        "level": "7",
+        "ExpRequired": "350",
+        "ExpSecProduce": "9"
+      },
+      {
+        "level": "8",
+        "ExpRequired": "400",
+        "ExpSecProduce": "10"
+      },
+      {
+        "level": "9",
+        "ExpRequired": "450",
+        "ExpSecProduce": "12"
+      },
+      {
+        "level": "10",
+        "ExpRequired": "500",
+        "ExpSecProduce": "13"
+      },
+      {
+        "level": "11",
+        "ExpRequired": "550",
+        "ExpSecProduce": "14"
+      },
+      {
+        "level": "12",
+        "ExpRequired": "600",
+        "ExpSecProduce": "15"
+      },
+      {
+        "level": "13",
+        "ExpRequired": "650",
+        "ExpSecProduce": "16"
+      },
+      {
+        "level": "14",
+        "ExpRequired": "700",
+        "ExpSecProduce": "17"
+      },
+      {
+        "level": "15",
+        "ExpRequired": "750",
+        "ExpSecProduce": "19"
+      },
+      {
+        "level": "16",
+        "ExpRequired": "800",
+        "ExpSecProduce": "20"
+      },
+      {
+        "level": "17",
+        "ExpRequired": "850",
+        "ExpSecProduce": "21"
+      },
+      {
+        "level": "18",
+        "ExpRequired": "900",
+        "ExpSecProduce": "22"
+      },
+      {
+        "level": "19",
+        "ExpRequired": "950",
+        "ExpSecProduce": "23"
+      },
+      {
+        "level": "20",
+        "ExpRequired": "1000",
+        "ExpSecProduce": "24"
+      },
+      {
+        "level": "21",
+        "ExpRequired": "1050",
+        "ExpSecProduce": "25"
+      },
+      {
+        "level": "22",
+        "ExpRequired": "1100",
+        "ExpSecProduce": "27"
+      },
+      {
+        "level": "23",
+        "ExpRequired": "1150",
+        "ExpSecProduce": "28"
+      },
+      {
+        "level": "24",
+        "ExpRequired": "1200",
+        "ExpSecProduce": "29"
+      },
+      {
+        "level": "25",
+        "ExpRequired": "1250",
+        "ExpSecProduce": "30"
+      },
+      {
+        "level": "26",
+        "ExpRequired": "1300",
+        "ExpSecProduce": "31"
+      },
+      {
+        "level": "27",
+        "ExpRequired": "1350",
+        "ExpSecProduce": "32"
+      },
+      {
+        "level": "28",
+        "ExpRequired": "1400",
+        "ExpSecProduce": "34"
+      },
+      {
+        "level": "29",
+        "ExpRequired": "1450",
+        "ExpSecProduce": "35"
+      },
+      {
+        "level": "30",
+        "ExpRequired": "1500",
+        "ExpSecProduce": "39"
+      },
+      {
+        "level": "31",
+        "ExpRequired": "1550",
+        "ExpSecProduce": "44"
+      },
+      {
+        "level": "32",
+        "ExpRequired": "1600",
+        "ExpSecProduce": "49"
+      },
+      {
+        "level": "33",
+        "ExpRequired": "1650",
+        "ExpSecProduce": "53"
+      },
+      {
+        "level": "34",
+        "ExpRequired": "1700",
+        "ExpSecProduce": "58"
+      },
+      {
+        "level": "35",
+        "ExpRequired": "1750",
+        "ExpSecProduce": "63"
+      },
+      {
+        "level": "36",
+        "ExpRequired": "1800",
+        "ExpSecProduce": "67"
+      },
+      {
+        "level": "37",
+        "ExpRequired": "1850",
+        "ExpSecProduce": "72"
+      },
+      {
+        "level": "38",
+        "ExpRequired": "1900",
+        "ExpSecProduce": "76"
+      },
+      {
+        "level": "39",
+        "ExpRequired": "1950",
+        "ExpSecProduce": "81"
+      },
+      {
+        "level": "40",
+        "ExpRequired": "2000",
+        "ExpSecProduce": "86"
+      },
+      {
+        "level": "41",
+        "ExpRequired": "2050",
+        "ExpSecProduce": "90"
+      },
+      {
+        "level": "42",
+        "ExpRequired": "2100",
+        "ExpSecProduce": "95"
+      },
+      {
+        "level": "43",
+        "ExpRequired": "2150",
+        "ExpSecProduce": "100"
+      },
+      {
+        "level": "44",
+        "ExpRequired": "2200",
+        "ExpSecProduce": "104"
+      },
+      {
+        "level": "45",
+        "ExpRequired": "2250",
+        "ExpSecProduce": "109"
+      },
+      {
+        "level": "46",
+        "ExpRequired": "2300",
+        "ExpSecProduce": "113"
+      },
+      {
+        "level": "47",
+        "ExpRequired": "2350",
+        "ExpSecProduce": "118"
+      },
+      {
+        "level": "48",
+        "ExpRequired": "2400",
+        "ExpSecProduce": "123"
+      },
+      {
+        "level": "49",
+        "ExpRequired": "2450",
+        "ExpSecProduce": "127"
+      },
+      {
+        "level": "50",
+        "ExpRequired": "2500",
+        "ExpSecProduce": "132"
+      }
+    ]
+  }
+}

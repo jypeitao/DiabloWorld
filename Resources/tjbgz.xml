@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>tjbgztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>tjbgz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>tjbgz_01.png</spriteFrame>
+            <spriteFrame>tjbgz_02.png</spriteFrame>
+            <spriteFrame>tjbgz_03.png</spriteFrame>
+            <spriteFrame>tjbgz_04.png</spriteFrame>
+            <spriteFrame>tjbgz_05.png</spriteFrame>
+            <spriteFrame>tjbgz_06.png</spriteFrame>
+            <spriteFrame>tjbgz_07.png</spriteFrame>
+            <spriteFrame>tjbgz_08.png</spriteFrame>
+            <spriteFrame>tjbgz_09.png</spriteFrame>
+            <spriteFrame>tjbgz_10.png</spriteFrame>
+            <spriteFrame>tjbgz_11.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

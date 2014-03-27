@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>ln.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>ln</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>ln_01.png</spriteFrame>
+            <spriteFrame>ln_02.png</spriteFrame>
+            <spriteFrame>ln_03.png</spriteFrame>
+            <spriteFrame>ln_04.png</spriteFrame>
+            <spriteFrame>ln_05.png</spriteFrame>
+            <spriteFrame>ln_06.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

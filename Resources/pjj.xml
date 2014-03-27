@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>pjjtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>pjj</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>pjj_01.png</spriteFrame>
+            <spriteFrame>pjj_02.png</spriteFrame>
+            <spriteFrame>pjj_03.png</spriteFrame>
+            <spriteFrame>pjj_04.png</spriteFrame>
+            <spriteFrame>pjj_05.png</spriteFrame>
+            <spriteFrame>pjj_06.png</spriteFrame>
+
+        </animation>
+        <animation>
+            <name>pjj_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>pjj_01_01.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

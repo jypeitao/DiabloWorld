@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>tgntx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>tgn</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>tgn_01.png</spriteFrame>
+            <spriteFrame>tgn_02.png</spriteFrame>
+            <spriteFrame>tgn_03.png</spriteFrame>
+            <spriteFrame>tgn_04.png</spriteFrame>
+            <spriteFrame>tgn_05.png</spriteFrame>
+            <spriteFrame>tgn_06.png</spriteFrame>
+            <spriteFrame>tgn_07.png</spriteFrame>
+            <spriteFrame>tgn_08.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>tgn_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>tgn_01_01.png</spriteFrame>
+            <spriteFrame>tgn_01_02.png</spriteFrame>
+            <spriteFrame>tgn_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

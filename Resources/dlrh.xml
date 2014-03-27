@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>dlrhtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>dlrh</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>dlrh_01.png</spriteFrame>
+            <spriteFrame>dlrh_02.png</spriteFrame>
+            <spriteFrame>dlrh_03.png</spriteFrame>
+            <spriteFrame>dlrh_04.png</spriteFrame>
+            <spriteFrame>dlrh_05.png</spriteFrame>
+            <spriteFrame>dlrh_06.png</spriteFrame>
+            <spriteFrame>dlrh_07.png</spriteFrame>
+            <spriteFrame>dlrh_08.png</spriteFrame>
+            <spriteFrame>dlrh_09.png</spriteFrame>
+            <spriteFrame>dlrh_10.png</spriteFrame>
+            <spriteFrame>dlrh_11.png</spriteFrame>
+            <spriteFrame>dlrh_12.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

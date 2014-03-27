@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>yszstx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>yszs</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>yszs_01.png</spriteFrame>
+            <spriteFrame>yszs_02.png</spriteFrame>
+            <spriteFrame>yszs_03.png</spriteFrame>
+            <spriteFrame>yszs_04.png</spriteFrame>
+            <spriteFrame>yszs_05.png</spriteFrame>
+            <spriteFrame>yszs_06.png</spriteFrame>
+            <spriteFrame>yszs_07.png</spriteFrame>
+            <spriteFrame>yszs_08.png</spriteFrame>
+            <spriteFrame>yszs_09.png</spriteFrame>
+            <spriteFrame>yszs_10.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>xsj.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>xsj</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>xsj_01.png</spriteFrame>
+            <spriteFrame>xsj_02.png</spriteFrame>
+            <spriteFrame>xsj_03.png</spriteFrame>
+            <spriteFrame>xsj_04.png</spriteFrame>
+            <spriteFrame>xsj_05.png</spriteFrame>
+            <spriteFrame>xsj_06.png</spriteFrame>
+            <spriteFrame>xsj_07.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

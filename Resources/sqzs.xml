@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>sqzstx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>sqzs</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>sqzs_01.png</spriteFrame>
+            <spriteFrame>sqzs_02.png</spriteFrame>
+            <spriteFrame>sqzs_03.png</spriteFrame>
+            <spriteFrame>sqzs_04.png</spriteFrame>
+            <spriteFrame>sqzs_05.png</spriteFrame>
+            <spriteFrame>sqzs_06.png</spriteFrame>
+            <spriteFrame>sqzs_07.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>sqzs_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>sqzs_01_01.png</spriteFrame>
+            <spriteFrame>sqzs_01_02.png</spriteFrame>
+            <spriteFrame>sqzs_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>

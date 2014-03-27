@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>ldztx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>ldz</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>ldz_01.png</spriteFrame>
+            <spriteFrame>ldz_02.png</spriteFrame>
+            <spriteFrame>ldz_03.png</spriteFrame>
+            <spriteFrame>ldz_04.png</spriteFrame>
+            <spriteFrame>ldz_05.png</spriteFrame>
+            <spriteFrame>ldz_06.png</spriteFrame>
+
+        </animation>
+    </animations>
+</root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <plists>
+        <plist>zhxjtx.plist</plist>
+    </plists>
+    <animations>
+        <animation>
+            <name>zhxj</name>
+            <delay>0.1</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>zhxj_01.png</spriteFrame>
+            <spriteFrame>zhxj_02.png</spriteFrame>
+            <spriteFrame>zhxj_03.png</spriteFrame>
+            <spriteFrame>zhxj_04.png</spriteFrame>
+            <spriteFrame>zhxj_05.png</spriteFrame>
+            <spriteFrame>zhxj_06.png</spriteFrame>
+            <spriteFrame>zhxj_07.png</spriteFrame>
+            <spriteFrame>zhxj_08.png</spriteFrame>
+            <spriteFrame>zhxj_09.png</spriteFrame>
+        </animation>
+        <animation>
+            <name>zhxj_tz</name>
+            <delay>0.125</delay>
+            <flipX>false</flipX>
+            <flipY>false</flipY>
+            <spriteFrame>zhxj_01_01.png</spriteFrame>
+            <spriteFrame>zhxj_01_02.png</spriteFrame>
+            <spriteFrame>zhxj_01_03.png</spriteFrame>
+        </animation>
+    </animations>
+</root>
