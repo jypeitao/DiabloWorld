@@ -80,7 +80,7 @@ private:
 	static void* ThreadSendMessage(void *p);
 	
 public:
-	SocketClient(String host, int port, byte clientId,
+	SocketClient(string host, int port, byte clientId,
 				 byte serverId,MessageHandler* netImpl);
 	
 	~SocketClient();

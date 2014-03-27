@@ -18,7 +18,7 @@
 
 bool LayerLogin::init()
 {
-    if(!CCLayer::init())
+    if(!Layer::init())
     {
         return false;
     }
@@ -35,8 +35,8 @@ void LayerLogin::firefly()
 {
     if(CC_TARGET_PLATFORM==CC_PLATFORM_IOS)
     {
-        testOC * test=testOC::create();
-        test->firefly();
+//        testOC * test=testOC::create();
+//        test->firefly();
     }
 }
 
@@ -44,37 +44,37 @@ void LayerLogin::jiumiaoshanyou()
 {
     if(CC_TARGET_PLATFORM==CC_PLATFORM_IOS)
     {
-        testOC * test=testOC::create();
-        test->initOc();
+//        testOC * test=testOC::create();
+//        test->initOc();
     }
 }
 
 void LayerLogin::initUI()
 {
-    winSize = CCDirector::sharedDirector()->getWinSize();
-    CCSprite *bg = CCSprite::createWithSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_bkg.png"));
-    bg->setPosition(ccp(winSize.width*0.5,winSize.height*0.5));
+    winSize = Director::getInstance()->getWinSize();
+    Sprite *bg = Sprite::createWithSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_bkg.png"));
+    bg->setPosition(Point(winSize.width*0.5,winSize.height*0.5));
     this->addChild(bg);
     if(CC_TARGET_PLATFORM==CC_PLATFORM_IOS)
     {
         url1=CCMenuItemImage::create("ns-1.png", "ns-2.png", this, menu_selector(LayerLogin::jiumiaoshanyou));
-        url1->setPosition(ccp(winSize.width-120, winSize.height-55));
-        url2=CCMenuItemImage::create("ff-1.png", "ff-2.png", this, menu_selector(LayerLogin::firefly));
-        url2->setPosition(ccp(winSize.width-45, winSize.height-55));
-        CCMenu *urlMenu=CCMenu::create(url1,url2,NULL);
+        url1->setPosition(Point(winSize.width-120, winSize.height-55));
+        url2=MenuItemImage::create("ff-1.png", "ff-2.png", this, menu_selector(LayerLogin::firefly));
+        url2->setPosition(Point(winSize.width-45, winSize.height-55));
+        Menu *urlMenu=Menu::create(url1,url2,NULL);
         urlMenu->setPosition(CCPointZero);
-        urlMenu->setAnchorPoint(ccp(0,0));
+        urlMenu->setAnchorPoint(Point(0,0));
         this->addChild(urlMenu);
     }
     else
     {
-        url1=CCMenuItemImage::create("ns-1.png", "ns-2.png", this, menu_selector(LayerLogin::callNull1));
-        url1->setPosition(ccp(winSize.width-120, winSize.height-55));
-        url2=CCMenuItemImage::create("ff-1.png", "ff-2.png", this, menu_selector(LayerLogin::callNull2));
-        url2->setPosition(ccp(winSize.width-45, winSize.height-55));
-        CCMenu *urlMenu=CCMenu::create(url1,url2,NULL);
+        url1=MenuItemImage::create("ns-1.png", "ns-2.png", this, menu_selector(LayerLogin::callNull1));
+        url1->setPosition(Point(winSize.width-120, winSize.height-55));
+        url2=MenuItemImage::create("ff-1.png", "ff-2.png", this, menu_selector(LayerLogin::callNull2));
+        url2->setPosition(Point(winSize.width-45, winSize.height-55));
+        Menu *urlMenu=Menu::create(url1,url2,NULL);
         urlMenu->setPosition(CCPointZero);
-        urlMenu->setAnchorPoint(ccp(0,0));
+        urlMenu->setAnchorPoint(Point(0,0));
         this->addChild(urlMenu);
 
     }
@@ -86,7 +86,7 @@ void LayerLogin::initUI()
 
 void LayerLogin::loadRes()
 {
-    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ui_login.plist");
+    SpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ui_login.plist");
 }
 
 void LayerLogin::callNull1()
@@ -98,64 +98,64 @@ void LayerLogin::callNull2()
     
 }
 void LayerLogin::zhenping(){
-    pSpriteDialogLogin = CCSprite::createWithSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_input.png"));//CCSprite::create("login_bg_en.png");
-    pSpriteDialogLogin->setPosition(ccp(winSize.width*0.5,winSize.height *0.5-100));
+    pSpriteDialogLogin = Sprite::createWithSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_input.png"));//Sprite::create("login_bg_en.png");
+    pSpriteDialogLogin->setPosition(Point(winSize.width*0.5,winSize.height *0.5-100));
     this->addChild(pSpriteDialogLogin);
-    CCMenuItemImage* btn_login = CCMenuItemImage::create();
-    btn_login->setNormalSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_login_1.png"));
-    btn_login->setSelectedSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_login_2.png"));
+    MenuItemImage* btn_login = MenuItemImage::create();
+    btn_login->setNormalSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_login_1.png"));
+    btn_login->setSelectedSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_login_2.png"));
     btn_login->setTarget(this, SEL_MenuHandler(&LayerLogin::menuItemCallbackLogin));
-    CCLabelTTF *version=CCLabelTTF::create("V1.4", "hycc.ttf", 18);
-    version->setColor(ccc3(28,42,52));
-    version->setPosition(ccp(winSize.width*0.5,winSize.height *0.5-290));
+    LabelTTF *version=LabelTTF::create("V1.4", "hycc.ttf", 18);
+    version->setColor(Color3B(28,42,52));
+    version->setPosition(Point(winSize.width*0.5,winSize.height *0.5-290));
     this->addChild(version);
-    CCMenu *pMenu = CCMenu::create();
+    Menu *pMenu = Menu::create();
     pMenu->alignItemsHorizontally();
     pMenu->addChild(btn_login);
     //pMenu->setPosition(pSpriteDialogLogin->getContentSize().width-75,pSpriteDialogLogin->getContentSize().height/2-10);
-    pMenu->setPosition(ccp(winSize.width/2-30, winSize.height/2-460));
-    pMenu->setTouchPriority(1);
+    pMenu->setPosition(Point(winSize.width/2-30, winSize.height/2-460));
+    //pMenu->setTouchPriority(1);
     pSpriteDialogLogin->addChild(pMenu);
+#ifndef defined(LINUX)
+    Scale9Sprite* editbkg = Scale9Sprite::create();
 
-    CCScale9Sprite* editbkg = CCScale9Sprite::create();
-    
-    editBoxUsername = CCEditBox::create(CCSizeMake(210,50),editbkg);
-    editBoxUsername->setReturnType(kKeyboardReturnTypeDone);
+    editBoxUsername = EditBox::create(CCSizeMake(210,50),editbkg);
+    editBoxUsername->setReturnType(EditBox::KeyboardReturnType::DONE);
     editBoxUsername->setFontSize(12);
     editBoxUsername->setText("");
-    editBoxUsername->setFontColor(ccc3(158, 122, 83));
+    editBoxUsername->setFontColor(Color3B(158, 122, 83));
     editBoxUsername->setMaxLength(8);
-    editBoxUsername->setPosition(ccp(winSize.width/2-10,96));//160,100
+    editBoxUsername->setPosition(Point(winSize.width/2-10,96));//160,100
     pSpriteDialogLogin->addChild(editBoxUsername,2);
-    
-    CCScale9Sprite* editbkg1 = CCScale9Sprite::create();
-    editBoxPassword = CCEditBox::create(CCSizeMake(190, 50),editbkg1);
-    editBoxPassword->setReturnType(kKeyboardReturnTypeDone);
-    editBoxPassword->setInputFlag(kEditBoxInputFlagPassword);
-    editBoxPassword->setFontColor(ccc3(158, 122, 83));
+
+    Scale9Sprite* editbkg1 = Scale9Sprite::create();
+    editBoxPassword = EditBox::create(CCSizeMake(190, 50),editbkg1);
+    editBoxPassword->setReturnType(EditBox::KeyboardReturnType::DONE);
+    editBoxPassword->setInputFlag(EditBox::InputFlag::PASSWORD);
+    editBoxPassword->setFontColor(Color3B(158, 122, 83));
     editBoxPassword->setMaxLength(8);
     editBoxPassword->setFontSize(8);
     editBoxPassword->setText("");
-    editBoxPassword->setPosition(ccp(winSize.width/2-22,45));//160,60
-    
-    pSpriteDialogLogin->addChild(editBoxPassword,2);
+    editBoxPassword->setPosition(Point(winSize.width/2-22,45));//160,60
 
+    pSpriteDialogLogin->addChild(editBoxPassword,2);
+#endif
 }
 
 void LayerLogin::onExit()
 {
-    CCLog("LayerLogin onExit");
-    CCLayer::onExit();
+    log("LayerLogin onExit");
+    Layer::onExit();
 }
 
 LayerLogin::~LayerLogin()
 {
-    CCLog("LayerLogin destroy");
-    CCSpriteFrameCache::sharedSpriteFrameCache()->removeSpriteFramesFromFile("ui_login.plist");
-    CCTextureCache::sharedTextureCache()->removeTextureForKey("ui_login.png");
+    log("LayerLogin destroy");
+    SpriteFrameCache::sharedSpriteFrameCache()->removeSpriteFramesFromFile("ui_login.plist");
+    TextureCache::sharedTextureCache()->removeTextureForKey("ui_login.png");
 }
 
-void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
+void LayerLogin::menuItemCallbackLogin(Object* pSender)
 {
     if(strcmp(editBoxUsername->getText(), "")&&strcmp(editBoxPassword->getText(), ""))
     {
@@ -201,7 +201,7 @@ void LayerLogin::menuItemCallbackLogin(CCObject* pSender)
             person["username"]=userName;
             person["password"]=password;
             std::string  json_file=writer.write(person);
-            CCLog("%s",json_file.c_str());
+            log("%s",json_file.c_str());
             SocketManager::getInstance()->sendMessage(json_file.c_str(), 101);
             this->schedule(schedule_selector(LayerLogin::receiveLoginData), 0.2);
         }
@@ -223,7 +223,7 @@ void LayerLogin::receiveLoginData(){
         this->unschedule(schedule_selector(LayerLogin::receiveLoginData));
         
         char * denglu=revMsg2->data;
-        CCLog("%s",denglu);
+        log("%s",denglu);
         CData::getCData()->setSendVal(denglu1);
         Json::Reader read;
         Json::Value root;
@@ -247,11 +247,11 @@ void LayerLogin::receiveLoginData(){
                     else
                     {
                         CData::getCData()->setfirstLogin(1);
-                        CCScene *scene=CCScene::create();
-                        CCLayer *slayer=startAnimate::create();
+                        Scene *scene=Scene::create();
+                        Layer *slayer=startAnimate::create();
                         scene->addChild(slayer);
                         load->removeFromParent();
-                        CCDirector::sharedDirector()->replaceScene(scene);
+                        Director::getInstance()->replaceScene(scene);
                     }
                 }
                 else
@@ -326,13 +326,13 @@ void LayerLogin::receivePersonalData(){
         url2->setVisible(false);
         load->removeFromParent();
         
-        CCMenuItemImage *pMenuItemStart = CCMenuItemImage::create();
-        pMenuItemStart->setNormalSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_start_1.png"));
-        pMenuItemStart->setSelectedSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_start_2.png"));
+        MenuItemImage *pMenuItemStart = MenuItemImage::create();
+        pMenuItemStart->setNormalSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_start_1.png"));
+        pMenuItemStart->setSelectedSpriteFrame(SpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("login_start_2.png"));
         pMenuItemStart->setTarget(this, SEL_MenuHandler(&LayerLogin::menuItemCallbackStart));
-        CCMenu *pMenu = CCMenu::create(pMenuItemStart,NULL);
+        Menu *pMenu = Menu::create(pMenuItemStart,NULL);
         this->addChild(pMenu,2);
-        CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+        Size winSize = Director::getInstance()->getWinSize();
         pMenu->setPosition(winSize.width/2, 180);
         
     }
@@ -341,18 +341,18 @@ void LayerLogin::removeLoader(){
 }
 
 
-void LayerLogin::menuItemCallbackStart(CCObject *pSender)
+void LayerLogin::menuItemCallbackStart(Object *pSender)
 {   
-    CCLog("start");
+    log("start");
     
-    CCScene *container=CCScene::create();//homepage  beginAni
+    Scene *container=Scene::create();//homepage  beginAni
     homePage * homePage = homePage::create();
     container->addChild(homePage);
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(2, container));
+    Director::getInstance()->replaceScene(TransitionFade::create(2, container));
 
     
 }
-void LayerLogin::menuItemCallbackSelector(CCObject *pSender)
+void LayerLogin::menuItemCallbackSelector(Object *pSender)
 {
     
 }

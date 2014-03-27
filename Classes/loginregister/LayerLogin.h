@@ -12,7 +12,7 @@ USING_NS_CC_EXT;
 
 using namespace std;
 
-class LayerLogin:public CCLayer
+class LayerLogin:public Layer
 {
     
 public:
@@ -22,12 +22,12 @@ public:
     virtual void onExit();
     ~LayerLogin();
     
-    CCSprite * texiao;
+    Sprite * texiao;
     bool hasRole;
     Loading * load;
 
-    CCSprite * logo;
-    CCSize winSize;
+    Sprite * logo;
+    Size winSize;
     
     char * denglu1;
     
@@ -51,19 +51,19 @@ private:
     
     // bool init();
    
-    void menuItemCallbackLogin(CCObject* pSender);
-    void menuItemCallbackStart(CCObject* pSender);
-    void menuItemCallbackSelector(CCObject* pSender);
+    void menuItemCallbackLogin(Object* pSender);
+    void menuItemCallbackStart(Object* pSender);
+    void menuItemCallbackSelector(Object* pSender);
     
     
     
     
     
     
-    //CCLabelTTF *label1;
-    //CCLabelTTF *label2;
-    CCMenuItemImage *url1,*url2;
-    CCSprite *pSpriteDialogLogin;
+    //LabelTTF *label1;
+    //LabelTTF *label2;
+    MenuItemImage *url1,*url2;
+    Sprite *pSpriteDialogLogin;
     EditBox* editBoxUsername;
     EditBox* editBoxPassword;
     
