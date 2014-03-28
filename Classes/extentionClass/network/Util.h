@@ -13,7 +13,7 @@
 
 
 typedef signed char byte;
-typedef std::string String;
+//typedef std::string String;
 typedef bool boolean;
 class ByteBuffer; 
 
@@ -86,7 +86,7 @@ public:
 
 
 
-String createRandString(int len,boolean filter);
+string createRandString(int len,boolean filter);
 
 
 

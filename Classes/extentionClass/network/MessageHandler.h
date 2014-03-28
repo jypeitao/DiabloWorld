@@ -31,7 +31,7 @@ public:
 	 * @param data
 	 * @param header
 	 */
-	virtual void httpReceived(int type,ByteBuffer* data,String header)=0;
+	virtual void httpReceived(int type,ByteBuffer* data,string header)=0;
 	
 	static const int ILLEGAL_ARGUMENT = 0;
 	static const int CONNECTION_NOT_FOUND = 1;

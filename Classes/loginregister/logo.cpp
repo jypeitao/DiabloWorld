@@ -1,5 +1,5 @@
 #include "logo.h"
-//#include "LayerLogin.h"
+#include "LayerLogin.h"
 
 bool logo::init()
 {
@@ -22,8 +22,8 @@ bool logo::init()
 
 void logo::replace()
 {
-//    Scene *scene = Scene::create();
-//    Layer *layer = LayerLogin::create();
-//    scene->addChild(layer);
-//    Director::getInstance()->replaceScene(scene);
+    Scene *scene = Scene::create();
+    Layer *layer = LayerLogin::create();
+    scene->addChild(layer);
+    Director::getInstance()->replaceScene(scene);
 }

@@ -136,48 +136,48 @@ void ByteBuffer::putUTF(const char* str){
 		put(str,0,len);
 	}
 }
-void ByteBuffer::putUTF(const String& str){
+void ByteBuffer::putUTF(const string& str){
 	putUTF(str.c_str());
 	
 }
 
 void ByteBuffer::putArray(vector<byte>& a){
 	putInt(a.size());
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		put(a[i]);
 	}	
 }
 void ByteBuffer::putArray(vector<bool>& a){
 	putInt(a.size());
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		put(a[i]);
 	}	
 }
 void ByteBuffer::putArray(vector<short>& a){
 	putInt(a.size());
 	//short* d = a.data();
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		putShort(a[i]);
 	}
 }
 void ByteBuffer::putArray(vector<int>& a){	
 	putInt(a.size());
 	//int* d = a.data();
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		putInt(a[i]);
 	}
 }
 void ByteBuffer::putArray(vector<long long>& a){
 	putInt(a.size());
 
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		putLong(a[i]);
 	}
 }
 void ByteBuffer::putArray(vector<string>& a){
 	putInt(a.size());
 	
-	for(int i=0;i< a.size();++i){
+	for(size_t i=0;i< a.size();++i){
 		putUTF(a[i]);
 	}
 }
@@ -264,7 +264,7 @@ void ByteBuffer::getArray(vector<string>& a,int size){
 	}
 }
 
-void ByteBuffer::getUTF(String& str){
+void ByteBuffer::getUTF(string& str){
 	short len = getShort();		
 	if( len>0){
 		str.append(buffer+position,len);
@@ -274,8 +274,8 @@ void ByteBuffer::getUTF(String& str){
 	}
 
 }
-String ByteBuffer::getUTF(){
-	String str;
+string ByteBuffer::getUTF(){
+	string str;
 	getUTF(str);		
 	return str;
 }
@@ -484,7 +484,7 @@ void ByteBuffer::putBoolean(bool b)
 }
 
 //这个方法只能用于打开的是文本文件的时候
-String ByteBuffer::getLine(){
+string ByteBuffer::getLine(){
     if( position>=capacity) return "";
 	string line;
 	for (int i = position; i<capacity; i++) {

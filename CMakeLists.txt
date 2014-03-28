@@ -38,15 +38,15 @@ else()
 set(ARCH_DIR "32-bit")
 endif()
 
-AUX_SOURCE_DIRECTORY(./Classes/ SRC_1)
+AUX_SOURCE_DIRECTORY(Classes/ SRC_1)
 AUX_SOURCE_DIRECTORY(./Classes/buzhen SRC_2)
 AUX_SOURCE_DIRECTORY(./Classes/employment SRC_3)
 AUX_SOURCE_DIRECTORY(./Classes/extentionClass SRC_4)
-AUX_SOURCE_DIRECTORY(./Classes/extentionClass/network SRC_5)
+AUX_SOURCE_DIRECTORY(./Classes/extentionClass/network SRC_NETWORK)
 AUX_SOURCE_DIRECTORY(./Classes/haoyou SRC_6)
 AUX_SOURCE_DIRECTORY(./Classes/headFile SRC_7)
 AUX_SOURCE_DIRECTORY(./Classes/headFile/zhujiemian SRC_8)
-AUX_SOURCE_DIRECTORY(./Classes/json SRC_9)
+AUX_SOURCE_DIRECTORY(./Classes/json/src/lib_json SRC_JSON)
 AUX_SOURCE_DIRECTORY(./Classes/liaotian SRC_10)
 AUX_SOURCE_DIRECTORY(./Classes/loginregister SRC_11)
 AUX_SOURCE_DIRECTORY(./Classes/mycomponent SRC_12)
@@ -56,12 +56,17 @@ set(GAME_SRC
             proj.linux/main.cpp
             Classes/AppDelegate.cpp
             Classes/loginregister/logo.cpp
+            Classes/loginregister/LayerLogin.cpp
+            ${SRC_NETWORK}
+            ${SRC_JSON}
+            
        )
 set(COCOS2D_ROOT ${CMAKE_SOURCE_DIR}/cocos2d)
 
 include_directories(
   /usr/local/include/GLFW
   Classes/loginregister
+  Classes/extentionClass/network
   ${COCOS2D_ROOT}
   ${COCOS2D_ROOT}/cocos
   ${COCOS2D_ROOT}/cocos/audio/include

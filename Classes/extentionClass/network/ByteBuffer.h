@@ -34,7 +34,7 @@ public:
 	void putInt(int n);
 	void putLong(long long n);
 	void putUTF(const char* str);
-	void putUTF(const String& str);
+	void putUTF(const string& str);
 	void putArray(vector<byte>& a);
 	void putArray(vector<bool>& a);
 	void putArray(vector<short>& a);
@@ -58,8 +58,8 @@ public:
 	
 	
 	
-	void getUTF(String& str);
-	String getUTF();
+	void getUTF(string& str);
+	string getUTF();
 	
 	int getPosition();
 	
@@ -80,7 +80,7 @@ public:
 	short getShort();
 	
 	//这个方法只能用于打开的是文本文件的时候
-	String getLine();
+	string getLine();
 	
 	long long getLong();
 	void get(char* bytes,int size);
