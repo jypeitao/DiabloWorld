@@ -10,7 +10,7 @@
 #include "message.h"
 #include <errno.h>
 #include <signal.h>
-//#include "CData.h"
+#include "CData.h"
 //CCDictionary* SocketClient::m_dictionary= cocos2d::CCDictionary::create();
 SocketClient::SocketClient(string host, int port, byte clientid, byte serverid,
         MessageHandler* netImpl) :
@@ -289,6 +289,7 @@ void SocketClient::sendMessage_(Message* msg, bool b)
         return;
     }
 
+    log("tao.pei%d",m_iState);
     {
         MyLock lock(&m_sendqueue_mutex);
         m_sendMessageQueue.push(msg);
@@ -399,7 +400,9 @@ void* SocketClient::ThreadSendMessage(void *p)
                 sendBuff.put(msg->data, 0, msg->datalength());
                 //            sendBuff.put(&msg, 0, msg->datalength());
                 sendBuff.flip();
+                log("send\n");
                 int ret = send(socket, (char *) sendBuff.getBuffer(), sendBuff.getLimit(), 0);
+                log("send ret = %d\n",ret);
                 if (ret == -1)
                 {
                     This->m_iState = SocketClient_DESTROY;
@@ -432,10 +435,12 @@ void* SocketClient::ThreadSendMessage(void *p)
             MyLock lock(&(This->m_thread_cond_mutex));
             if (This->m_iState != SocketClient_DESTROY && This->m_sendMessageQueue.size() == 0)
             {
+                log("pthread_cond_timedwait");
                 pthread_cond_timedwait(&(This->m_threadCond), &(This->m_thread_cond_mutex), &ts);
             }
 
         }
+        log("pthread_cond_con");
 
     }
     //if(DEBUG) printf("SocketClient::ThreadSendMessage(), send thread stop!\n");
@@ -476,7 +481,7 @@ void* SocketClient::ThreadReceiveMessage(void *p)
     while (This->m_iState != SocketClient_DESTROY)
     {
 
-        log("hahahahahahahhahahahahahahahha");
+        //log("hahahahahahahhahahahahahahahha");
         if (This->m_iState != SocketClient_OK)
         {
             usleep(1000);
@@ -492,6 +497,7 @@ void* SocketClient::ThreadReceiveMessage(void *p)
 //		int ret = select(This->m_hSocket+1,&fdRead,NULL,NULL,NULL);
         int ret = select(This->m_hSocket + 1, &fdRead, NULL, NULL, &aTime);
 
+        log("select ret = %d",ret);
         if (ret == -1)
         {
             if (errno == EINTR)
@@ -655,15 +661,15 @@ void* SocketClient::ThreadReceiveMessage(void *p)
 
                             log("%lu-----------------", This->m_receivedMessageQueue.size());
 
-                            log("%d", bytesToInt(message->commandId));
+                            log("tao.pei%d", bytesToInt(message->commandId));
                             if (bytesToInt(message->commandId) == 218)
                             {
-                                //CData::getCData()->m_newlevel_dic->setObject(message, 218);
+                                CData::getCData()->m_newlevel_dic->setObject(message, 218);
                             }
                             else
                             {
-//                                CData::getCData()->m_dictionary->setObject(message,
-//                                        bytesToInt(message->commandId));
+                                CData::getCData()->m_dictionary->setObject(message,
+                                        bytesToInt(message->commandId));
 
                             }
 

@@ -7,7 +7,7 @@
 using namespace cocos2d;
 using namespace std;
 
-class MapItem:public CCObject{
+class MapItem:public Object{
 public:
     MapItem(){
         
@@ -16,10 +16,13 @@ public:
         bid = 0;
         mapId = 0;
         itemId = 0;
+        coin = 0;
+        img = 0;
+        exp = 0;
         enemy = "";
         enemydesc = "";
     }
-    CCPoint pos;
+    Point pos;
     string nickname;
     string desc;
     string zj;

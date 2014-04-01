@@ -7,7 +7,7 @@
 using namespace cocos2d;
 using namespace std;
 
-class hcitemdata:public CCObject{
+class hcitemdata:public Object{
 public:
     hcitemdata(){
         
@@ -25,7 +25,7 @@ public:
     
 };
 
-class configMonsterItem:public CCObject
+class configMonsterItem:public Object
 {
 public:
     configMonsterItem()
@@ -38,7 +38,7 @@ public:
     string nickname;
 };
 
-class configHeroItem:public CCObject
+class configHeroItem:public Object
 {
     
 public:
@@ -90,7 +90,7 @@ public:
 };
 
 
-class configGoodsItem:public CCObject{
+class configGoodsItem:public Object{
 public:
     configGoodsItem(){
         icon=0;
@@ -120,7 +120,7 @@ public:
     int compound;
     
 };
-class heroItemData:public CCObject
+class heroItemData:public Object
 {
 public:
     heroItemData(){
@@ -144,6 +144,7 @@ public:
         maxexp=0;
         jnicon=0;
         mj=0;
+        tempid=0;
     };
     int index;          //索引
     int petId;          //宠物ID

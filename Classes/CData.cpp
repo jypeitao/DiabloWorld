@@ -5,23 +5,23 @@ static CData *cdata;
 CData::CData()
 {
     selectwjID=0;
-    m_tunshi_dic=CCDictionary::create();
+    m_tunshi_dic=__Dictionary::create();
     m_tunshi_dic->retain();
-    m_dictionary = cocos2d::CCDictionary::create();
+    m_dictionary = cocos2d::__Dictionary::create();
     m_dictionary->retain();
-    m_newlevel_dic=CCDictionary::create();
+    m_newlevel_dic=__Dictionary::create();
     m_newlevel_dic->retain();
     
-    m_config_goods_dic = CCDictionary::create();
+    m_config_goods_dic = __Dictionary::create();
     m_config_goods_dic->retain();
     
-    m_config_hero_dic = CCDictionary::create();
+    m_config_hero_dic = __Dictionary::create();
     m_config_hero_dic->retain();
     
-    m_config_monster_dic = CCDictionary::create();
+    m_config_monster_dic = __Dictionary::create();
     m_config_monster_dic->retain();
     
-    m_config_map_level_dic = CCDictionary::create();
+    m_config_map_level_dic = __Dictionary::create();
     m_config_map_level_dic->retain();
     
     index=0;
@@ -37,7 +37,7 @@ void CData::writeFile(std::string filename, std::string value)
 {
     std::string Background = value;
     const char * groundName = Background.c_str();
-    std::string doPath = "";//CCFileUtils::sharedFileUtils()->getWriteablePath();
+    std::string doPath = "";//FileUtils::getInstance()->getWriteablePath();
     std::string filenamea = filename;
     std::string filepath = doPath + filename;
     FILE *fp = fopen(filepath.c_str(),"w");
@@ -53,7 +53,7 @@ int CData::getmidindex(){
 //更具关键字读取手机中的内容
 std::string CData::readFile(std::string filename)
 {
-    std::string doPath ="";// CCFileUtils::sharedFileUtils()->getWriteablePath();
+    std::string doPath ="";// FileUtils::getInstance()->getWriteablePath();
     std::string filenamea = filename;
     std::string filepath = doPath + filename;
     FILE *fp1 = fopen(filepath.c_str(),"r");
@@ -72,7 +72,7 @@ std::string CData::readFile(std::string filename)
     if (!pchBuf)
         
     {
-        //        CCLOG("内存不够!\n");
+        //        LOG("内存不够!\n");
         exit(0);
     }
     
@@ -148,7 +148,7 @@ configMonsterItem* CData::getConfigOfMonster(int tempid)
 {
     if(m_config_monster_dic->count() < 1)
     {
-        //   const char * path=CCFileUtils::sharedFileUtils()->fullPathForFilename("hero.json").c_str();
+        //   const char * path=FileUtils::getInstance()->fullPathForFilename("hero.json").c_str();
         //        ifstream ifs;
         //        ifs.open(path);
         //        assert(ifs.is_open());
@@ -162,8 +162,8 @@ configMonsterItem* CData::getConfigOfMonster(int tempid)
         //        Json::Value::iterator it;
         Json::Value::Members::iterator it;
         
-        string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("monster.json");
-        CCString* str = CCString::createWithContentsOfFile(path.c_str());
+        string path = FileUtils::getInstance()->fullPathForFilename("monster.json");
+        __String* str = __String::createWithContentsOfFile(path.c_str());
         
         if(reader.parse(str->getCString(), root)){
             
@@ -202,7 +202,7 @@ configHeroItem*  CData::getConfigOfHero(int tempid)
     
     if(m_config_hero_dic->count() < 1)
     {
-     //   const char * path=CCFileUtils::sharedFileUtils()->fullPathForFilename("hero.json").c_str();
+     //   const char * path=FileUtils::getInstance()->fullPathForFilename("hero.json").c_str();
 //        ifstream ifs;
 //        ifs.open(path);
 //        assert(ifs.is_open());
@@ -216,8 +216,8 @@ configHeroItem*  CData::getConfigOfHero(int tempid)
         //        Json::Value::iterator it;
         Json::Value::Members::iterator it;
         
-        string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("hero.json");
-        CCString* str = CCString::createWithContentsOfFile(path.c_str());
+        string path = FileUtils::getInstance()->fullPathForFilename("hero.json");
+        __String* str = __String::createWithContentsOfFile(path.c_str());
         
         if(reader.parse(str->getCString(), root)){
             
@@ -299,8 +299,8 @@ MapItem* CData::getConfigOfMapLevel(int levelid)
     Json::Value list;
     
     
-    string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("map.json");
-    CCString* str = CCString::createWithContentsOfFile(path.c_str());
+    string path = FileUtils::getInstance()->fullPathForFilename("map.json");
+    __String* str = __String::createWithContentsOfFile(path.c_str());
     int sz = 0;
     if(read.parse(str->getCString(), root)){
         data = root["data"];
@@ -322,7 +322,7 @@ MapItem* CData::getConfigOfMapLevel(int levelid)
             
             
             list = data[i]["mconfig"];
-            CCDictionary* dic = CCDictionary::create();
+            __Dictionary* dic = __Dictionary::create();
            
             int  len =list.size();
             for (int ei = 0; ei < len; ei++)
@@ -337,7 +337,7 @@ MapItem* CData::getConfigOfMapLevel(int levelid)
                 else{
                     char iii[100] = "";
                     sprintf(iii, "怪物id不存在  %d",iiiiid);
-                    CCLog(iii);
+                    log(iii);
                 }
                 
             }
@@ -345,31 +345,31 @@ MapItem* CData::getConfigOfMapLevel(int levelid)
             char chars[500] = "";
             
             int how = dic->count();
-            CCArray* arr = dic->allKeys();
+            Array* arr = dic->allKeys();
             switch (how) {
                 case 1:
-                    sprintf(chars, "【%s】",((CCString*)(arr->objectAtIndex(0)))->getCString());
+                    sprintf(chars, "【%s】",((__String*)(arr->objectAtIndex(0)))->getCString());
                     break;
                 case 2:
-                    sprintf(chars, "【%s】\n【%s】",((CCString*)(arr->objectAtIndex(0)))->getCString(),((CCString*)(arr->objectAtIndex(1)))->getCString());
+                    sprintf(chars, "【%s】\n【%s】",((__String*)(arr->objectAtIndex(0)))->getCString(),((__String*)(arr->objectAtIndex(1)))->getCString());
                     break;
                 case 3:
-                    sprintf(chars, "【%s】  【%s】\n【%s】",((CCString*)(arr->objectAtIndex(0)))->getCString(),((CCString*)(arr->objectAtIndex(1)))->getCString(),((CCString*)(arr->objectAtIndex(2)))->getCString());
+                    sprintf(chars, "【%s】  【%s】\n【%s】",((__String*)(arr->objectAtIndex(0)))->getCString(),((__String*)(arr->objectAtIndex(1)))->getCString(),((__String*)(arr->objectAtIndex(2)))->getCString());
                     break;
                     
                 default:
                     if(how >= 4)
                     {
-                        sprintf(chars, "【%s】  【%s】\n【%s】  【%s】",((CCString*)(arr->objectAtIndex(0)))->getCString(),
-                                ((CCString*)(arr->objectAtIndex(1)))->getCString(),
-                                ((CCString*)(arr->objectAtIndex(2)))->getCString(),((CCString*)(arr->objectAtIndex(3)))->getCString());
+                        sprintf(chars, "【%s】  【%s】\n【%s】  【%s】",((__String*)(arr->objectAtIndex(0)))->getCString(),
+                                ((__String*)(arr->objectAtIndex(1)))->getCString(),
+                                ((__String*)(arr->objectAtIndex(2)))->getCString(),((__String*)(arr->objectAtIndex(3)))->getCString());
                     }
                     break;
             }
             
             item->enemydesc = chars;
             
-            CCLog(item->enemydesc.c_str());
+            log(item->enemydesc.c_str());
             m_config_map_level_dic->setObject(item, item->bid);
         }
         
@@ -387,7 +387,7 @@ configGoodsItem*  CData::getConfigOfGoods(int tempid)
     
     if(m_config_goods_dic->count() < 1)
     {
-//        const char * path=CCFileUtils::sharedFileUtils()->fullPathForFilename("itemconfig.json").c_str();
+//        const char * path=FileUtils::getInstance()->fullPathForFilename("itemconfig.json").c_str();
 //        ifstream ifs;
 //        ifs.open(path);
 //        assert(ifs.is_open());
@@ -400,8 +400,8 @@ configGoodsItem*  CData::getConfigOfGoods(int tempid)
 //        Json::Value::iterator it;
         Json::Value::Members::iterator it;
         
-        string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("item.json");
-        CCString* str = CCString::createWithContentsOfFile(path.c_str());
+        string path = FileUtils::getInstance()->fullPathForFilename("item.json");
+        __String* str = __String::createWithContentsOfFile(path.c_str());
             
         if(reader.parse(str->getCString(), root)){
             
@@ -521,10 +521,10 @@ void CData::setIndex(int index){
 int CData::getIndex(){
     return index;
 }
-void CData::setjianghu(cocos2d::CCNode *jianghu){
+void CData::setjianghu(cocos2d::Node *jianghu){
     this->JH=jianghu;
 }
-CCNode * CData::getjianghu(){
+Node * CData::getjianghu(){
     return JH;
 }
 
@@ -560,29 +560,29 @@ void CData::setyinyue(const char *yinyue)
 {
 //    if(readFile("yinyue")=="YES")
     {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(yinyue, true);
+        CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(yinyue, true);
     }
 }
 void CData::setyinxiao()
 {
 //    if(readFile("yinxiao")=="YES")
     {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("yx.mp3");
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("yx.mp3");
     }
 }
 void CData::setFiremusic(){
     {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("battleAttacked.mp3");
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("battleAttacked.mp3");
     }
 }
 void CData::setTFiremusic(){
     {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("battleAttack.mp3");
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("battleAttack.mp3");
     }
 }
 void CData::settzyy()
 {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+        CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
 }
 void CData::setCZ_Fire_data(char *jsondata){
     cz_fire_data=jsondata;

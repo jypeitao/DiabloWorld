@@ -55,6 +55,7 @@ AUX_SOURCE_DIRECTORY(./Classes/xuanzerenwu SRC_14)
 set(GAME_SRC
             proj.linux/main.cpp
             Classes/AppDelegate.cpp
+            Classes/CData.cpp
             Classes/loginregister/logo.cpp
             Classes/loginregister/LayerLogin.cpp
             ${SRC_NETWORK}
@@ -65,7 +66,10 @@ set(COCOS2D_ROOT ${CMAKE_SOURCE_DIR}/cocos2d)
 
 include_directories(
   /usr/local/include/GLFW
+  Classes
   Classes/loginregister
+  Classes/hecheng
+  Classes/headFile/zhujiemian
   Classes/extentionClass/network
   ${COCOS2D_ROOT}
   ${COCOS2D_ROOT}/cocos

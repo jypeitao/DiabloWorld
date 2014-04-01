@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "cocos2d.h"
-#include "json.h"
+#include "json/include/json/json.h"
 #include "hcitemdata.h"
 #include "myobject.h"
 
@@ -15,17 +15,17 @@ class CData
 {
 public:
     int selectwjID;
-    CCDictionary * m_dictionary;
-    CCDictionary * m_newlevel_dic;
-    CCDictionary * m_tunshi_dic;
+    __Dictionary * m_dictionary;
+    __Dictionary * m_newlevel_dic;
+    __Dictionary * m_tunshi_dic;
     
-    CCDictionary * m_config_goods_dic;
+    __Dictionary * m_config_goods_dic;
     
-    CCDictionary * m_config_hero_dic;
+    __Dictionary * m_config_hero_dic;
     
-    CCDictionary* m_config_monster_dic;
+    __Dictionary* m_config_monster_dic;
     
-    CCDictionary* m_config_map_level_dic;
+    __Dictionary* m_config_map_level_dic;
     
     
     void writeFile(std::string filename, std::string value);
@@ -53,14 +53,14 @@ public:
     int getTL();
     void setZGZB(int tag);
     int getZGZB();
-    void setjianghu(CCNode * jianghu);
+    void setjianghu(Node * jianghu);
     bool getczorzy();
     void setczorzy(bool flag);
     void setFireJson(Json::Value json);
     Json::Value getFireJson();
     void setFireResult(int result);
     int getFireResult();
-    CCNode * getjianghu();
+    Node * getjianghu();
     
     
     void setZGBagInfo(const char *str);
@@ -161,7 +161,7 @@ private:
     
     int _mid;
     bool _chatFlag;
-    CCNode * JH;
+    Node * JH;
     char * cz_fire_data;
     char * cz_info;
     bool is_yy;

@@ -14,6 +14,7 @@
 //#include "CustomPop.h"
 
 //#include "TestCpp.h"
+#include "CData.h"
 
 bool LayerLogin::init()
 {
@@ -22,7 +23,7 @@ bool LayerLogin::init()
         return false;
     }
     const char *bgMusic = "bg.mp3";
-    //CData::getCData()->setyinyue(bgMusic);
+    CData::getCData()->setyinyue(bgMusic);
     SocketManager::getInstance()->startSocket();
     loadRes();
     initUI();
@@ -238,56 +239,59 @@ void LayerLogin::menuItemCallbackLogin(Object* pSender)
 }
 void LayerLogin::receiveLoginData(float t)
 {
-//    Message* revMsg2 = (Message *) CData::getCData()->m_dictionary->objectForKey(101);
-//    CData::getCData()->m_dictionary->removeObjectForKey(101);
-//
-//    if (revMsg2)
-//    {
-//
-//        this->unschedule(schedule_selector(LayerLogin::receiveLoginData));
-//
-//        char * denglu=revMsg2->data;
-//        log("%s",denglu);
-//        CData::getCData()->setSendVal(denglu1);
-//        Json::Reader read;
-//        Json::Value root;
-//        bool result;
-//        Json::Value data;
-//        if(denglu)
-//        {
-//            if (read.parse(denglu, root))
-//            {
-//                Json::Value data=root["data"];
-//                std::string message=root["message"].asString();
-//                result=root["result"].asBool();
-//                if(result)
-//                {
-//                    CData::getCData()->setCharactorId(data["characterId"].asInt());
-//                    _hasRole=data["hasRole"].asBool();
-//                    CData::getCData()->setUserId(data["userId"].asInt());
-//                    if(_hasRole)
-//                    {
-//                        CData::getCData()->setfirstLogin(2);
-//                        this->schedule(schedule_selector(LayerLogin::sendPersonalData), 0.2);
-//                    }
-//                    else
-//                    {
+    Message* revMsg2 = (Message *) CData::getCData()->m_dictionary->objectForKey(101);
+    CData::getCData()->m_dictionary->removeObjectForKey(101);
+   // log("peter receiveLoginData");
+    if (revMsg2)
+    {
+
+        this->unschedule(schedule_selector(LayerLogin::receiveLoginData));
+
+        char * denglu=revMsg2->data;
+        log("%s",denglu);
+        log("peter denglu");
+        CData::getCData()->setSendVal(denglu1);
+        Json::Reader read;
+        Json::Value root;
+        bool result;
+        Json::Value data;
+        if(denglu)
+        {
+            if (read.parse(denglu, root))
+            {
+                Json::Value data=root["data"];
+                std::string message=root["message"].asString();
+                result=root["result"].asBool();
+                if(result)
+                {
+                    CData::getCData()->setCharactorId(data["characterId"].asInt());
+                    _hasRole=data["hasRole"].asBool();
+                    CData::getCData()->setUserId(data["userId"].asInt());
+                    if(_hasRole)
+                    {
+                        CData::getCData()->setfirstLogin(2);
+                        log("peter true");
+                        //this->schedule(schedule_selector(LayerLogin::sendPersonalData), 0.2);
+                    }
+                    else
+                    {
+                        log("peter false");
 //                        CData::getCData()->setfirstLogin(1);
 //                        Scene *scene=Scene::create();
 //                        Layer *slayer=startAnimate::create();
 //                        scene->addChild(slayer);
-//                        _load->removeFromParent();
+//                       // _load->removeFromParent();
 //                        Director::getInstance()->replaceScene(scene);
-//                    }
-//                }
-//                else
-//                {
+                    }
+                }
+                else
+                {
 //                    CustomPop::show(message.c_str());
-//                    _load->removeFromParent();
-//                }
-//            }
-//        }
-//    }
+                    //_load->removeFromParent();
+                }
+            }
+        }
+    }
 }
 void LayerLogin::sendPersonalData()
 {

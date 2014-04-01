@@ -37,7 +37,7 @@ void SocketManager::startSocket()
     }
     log("%s", IPStr);
     log("--------------------------");
-    _socket = new SocketClient("192.168.1.110", 11211, 1, 1, NULL);
+    _socket = new SocketClient("110.184.111.92", 9999, 1, 1, NULL);
     //_socket = new SocketClient("192.168.1.210",11009,1,1,NULL);
 //    _socket = new SocketClient("183.60.243.195",31009,1,1,NULL);
 
